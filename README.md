@@ -19,7 +19,7 @@ GhostRoot es una herramienta que utiliza proot para simular los privilegios root
 * ` pkg install -y proot `
 * ` termux-setup-storage `
 * ` git clone https://github.com/LizandroYT/GhostRoot.git `
-* `cd GhostRoot
+* `cd GhostRoot `
 * ` bash install.sh `
 * ` ./start `
   
