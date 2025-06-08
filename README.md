@@ -2,7 +2,7 @@
 
 <a href="https://github.com/LizandroYT"><img title="Author" src="https://img.shields.io/badge/Author-Lizandro%20YT-svg?style=for-the-badge&logo=github"></a>
 <div align="center">
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-0.1-green.svg?style=flat-square"></a>
+<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-Beta-green.svg?style=flat-square"></a>
 <a href="https://github.com/LizandroYT/GhostRoot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/LizandroYT/GhostRoot?color=red&style=flat-square"></a>
 <a href="https://github.com/LizandroYT/GhostRoot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/LizandroYT/GhostRoot?color=red&style=flat-square"></a>
 <a href="https://github.com/LizandroYT/GhostRoot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/LizandroYT/GhostRoot?label=Watchers&color=blue&style=flat-square"></a>
