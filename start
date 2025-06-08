@@ -76,7 +76,7 @@ touch $ruta/root
 echo "proot -0 -w ~ $PREFIX/bin/bash" >> $ruta/root
 chmod 700 $ruta/root
 echo
-sleep 5
+sleep 4
 clear
 echo -e "$v"
 echo -e ' ________\n< GhostRoot >\n --------\n        \   ^__^\n         \  (xx)\_______\n            (__)\       )\/\\\n             U  ||----w||\n                ||     ||\n  \033[0m'
