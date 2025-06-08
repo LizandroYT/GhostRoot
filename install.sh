@@ -82,7 +82,7 @@ sleep 2
 clear
 banner2
 chmod +x * start
-sleep 0.3
+sleep 0.4
 printf "$A[$b1+$A]${b1} Finalizado..!\n"
 sleep 0.3
 printf "$A[$b1+$A]${b1} Creador:$a Lizandro YT\n"
