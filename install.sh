@@ -1,36 +1,28 @@
-#!/bin/bash
-trap Adios INT
-g="${b}\033[1;30m"
-b="\033[0m"
-b1="$b\033[1;37m"
-r="${b}\033[1;31m"
-r1="${b}\033[31m"
-A="${b}\033[1;34m"
-A1="${b}\033[34m"
-ac="${b}\e[1;36m"
-ac1="${b}\e[36m"
-v="${b}\033[1;32m"
-v1="${b}\033[32m"
-m="$b\033[1;35m"
-m1="$b\033[35m"
-a="$b\033[1;33m"
-a1="$b\033[33m"
-cy="$b\033[38;2;23;147;209m"
+#!/bin/bash -e
 
-Adios()  {
-sleep 0.0
-echo
-printf "$A[$b1+$A]${b1} Creador:$a     Lizandro YT\n"
-printf "$A[$b1+$A]${b1} Herramienta:$a GhostRoot\n"
-printf "$A[$b1+$A]${b1} GitHub:$a      https://github.com/LizandroYT\n"
-echo
-sleep 0.3
-exit
+# Colores
+b="\033[0m"
+b1="\033[1;37m"
+r="\033[1;31m"
+A="\033[1;34m"
+a="\033[1;33m"
+v="\033[1;32m"
+v1="\033[32m"
+
+# Función de salida
+Adios() {
+  echo
+  printf "$A[$b1+$A]${b1} Creador:$a     Lizandro YT\n"
+  printf "$A[$b1+$A]${b1} Herramienta:$a GhostRoot\n"
+  printf "$A[$b1+$A]${b1} GitHub:$a      https://github.com/LizandroYT\n"
+  echo
+  exit
 }
+
+trap Adios INT
 
 banner1() {
   clear
-  sleep 0.5
   echo -e "$v ▄▄▄▄▄▄
  ██▀▀▀▀██                        ██
  ██    ██   ▄████▄    ▄████▄   ███████
@@ -39,7 +31,7 @@ banner1() {
  ██    ██  ▀██▄▄██▀  ▀██▄▄██▀    ██▄▄▄
  ▀▀    ▀▀▀   ▀▀▀▀      ▀▀▀▀       ▀▀▀▀
 "
-  sleep 2
+  sleep 1
 }
 
 banner2() {
@@ -58,41 +50,25 @@ $b"
   sleep 1
 }
 
-banner3() {
-  clear
-  echo -e '\033[1;33m
-  ██████  ██████  ██████  ██████ 
-  ██      ██      ██      ██      
-  ██  ███ ██  ███ ██  ███ ██  ███ 
-  ██   ██ ██   ██ ██   ██ ██   ██ 
-  ██████  ██████  ██████  ██████ 
-\033[0m'
-}
-
+# Inicio de la instalación
 banner1
-echo -e "\033[0m\033[32m Instalacion Necesaria:$b"
-echo
-sleep 1
+echo -e "\033[0m\033[32m Instalación necesaria:$b\n"
 echo -e "$A[$v+$A]$A Instalando$v GhostRoot$b"
-pkg install -y proot &>> /dev/null
-if [ -e /data/data/com.termux/files/usr/bin/proot ]; then
-  echo -e "${v}GhostRoot Instalado Con Exito${b}"
+
+if pkg install -y proot &>/dev/null && [ -x /data/data/com.termux/files/usr/bin/proot ]; then
+  echo -e "${v}GhostRoot instalado con éxito${b}"
 else
-  echo -e "${r}Error En Instalacion${b}"
+  echo -e "${r}Error en la instalación${b}"
+  exit 1
 fi
-sleep 2
-clear
+
+chmod +x start 2>/dev/null || true
+
 banner2
-chmod +x * start
-sleep 0.3
+
 printf "$A[$b1+$A]${b1} Finalizado..!\n"
-sleep 0.3
 printf "$A[$b1+$A]${b1} Creador:$a Lizandro YT\n"
-sleep 0.3
 printf "$A[$b1+$A]${b1} GitHub:$a  https://github.com/LizandroYT\n"
-sleep 0.3
 printf "$A[$b1+$A]${b1} Utiliza:$r ./start$b\n"
-sleep 0.1
 echo
-sleep 1
-exit
+exit 0
