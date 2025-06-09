@@ -16,18 +16,16 @@
 
 ---
 
-## Instalación
+# Instalación
 
-```bash
-apt update && apt -y upgrade
-pkg install -y git proot
-termux-setup-storage
-git clone https://github.com/LizandroYT/GhostRoot.git
-cd GhostRoot
-bash install.sh
-./start
-```
-
+* `apt update && apt -y upgrade` 
+* ` pkg install -y git `
+* ` pkg install -y proot `
+* ` termux-setup-storage `
+* ` git clone https://github.com/LizandroYT/GhostRoot.git `
+* `cd GhostRoot `
+* ` bash install.sh `
+* ` ./start `
 ---
 
 ## Uso
