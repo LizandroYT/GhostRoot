@@ -76,11 +76,6 @@ touch $ruta/root
 echo "proot -0 -w ~ $PREFIX/bin/bash" >> $ruta/root
 chmod 700 $ruta/root
 echo
-sleep 4
-clear
-echo -e "$v"
-echo -e ' ________\n< GhostRoot >\n --------\n        \   ^__^\n         \  (xx)\_______\n            (__)\       )\/\\\n             U  ||----w||\n                ||     ||\n  \033[0m'
-echo
 sleep 0.3
 printf "$A[$b1+$A]${b1} Proceso:$a     Finalizado\n"
 sleep 0.3
