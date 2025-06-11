@@ -36,11 +36,39 @@
 
 ---
 
+## ¿Para qué sirve GhostRoot?
+
+- Ejecutar comandos como si fueras root (pero sin ser root real).
+- Probar scripts o programas que piden permisos de root.
+- Practicar administración de sistemas de manera segura.
+- Crear un entorno aislado para experimentar.
+
+### ¿Qué NO puedes hacer?
+
+- No modifica el sistema Android real.
+- No permite instalar módulos de kernel ni acceder a áreas protegidas reales.
+- No otorga privilegios root fuera de Termux ni en otras apps.
+
+---
+
+## Ejemplos de uso
+
+- Probar scripts de administración que requieren root:
+  ```bash
+  root
+  bash mi_script.sh
+  ```
+- Instalar paquetes o probar configuraciones avanzadas dentro del entorno simulado.
+
+---
+
 ## Notas
 
-- **GhostRoot** está pensado para entornos como Termux.
+- GhostRoot está pensado para entornos Termux.
+- Usa bajo tu propia responsabilidad.
 - No otorga privilegios root reales, solo simula el entorno para facilitar pruebas y desarrollo.
-- Usa bajo tu propio riesgo.
+  
+
 
 ---
 
